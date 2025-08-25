@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import DashboardSection from "@/components/DashboardSection";
+import MobileAppScreen from "@/components/MobileAppScreen";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -18,6 +19,9 @@ const Index = () => {
     <main className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
+      
+      {/* Mobile App Demo */}
+      <MobileAppScreen />
       
       {/* Dashboard Demo Section */}
       <DashboardSection />
