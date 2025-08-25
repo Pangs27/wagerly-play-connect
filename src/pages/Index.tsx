@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import FeatureSection from "@/components/FeatureSection";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Update page title and meta description for SEO
+    document.title = "Wagerly - India's First Social Challenge Network | Gaming & Wagering Platform";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Join Wagerly, India\'s first social challenge network. Compete with friends, challenge creators, and win real rewards through gaming and social wagering.');
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <HeroSection />
+      
+      {/* Features Section */}
+      <FeatureSection />
+    </main>
   );
 };
 
