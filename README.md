@@ -10,7 +10,7 @@ There are several ways of editing your application.
 
 **Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/47295172-34c4-4d07-a60d-01ea4c1f1274) and start prompting.
+Simply visit the [Lovable Project](https://wagerly-play-connect.lovable.app/) and start prompting.
 
 Changes made via Lovable will be committed automatically to this repo.
 
