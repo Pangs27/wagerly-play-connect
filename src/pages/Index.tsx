@@ -2,6 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import FeatureSection from "@/components/FeatureSection";
 import DashboardSection from "@/components/DashboardSection";
 import MobileAppScreen from "@/components/MobileAppScreen";
+import ChallengeRewardsScreen from "@/components/ChallengeRewardsScreen";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -22,6 +23,9 @@ const Index = () => {
       
       {/* Mobile App Demo */}
       <MobileAppScreen />
+      
+      {/* Challenge & Rewards Demo */}
+      <ChallengeRewardsScreen />
       
       {/* Dashboard Demo Section */}
       <DashboardSection />
