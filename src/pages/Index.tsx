@@ -1,46 +1,13 @@
-import HeroSection from "@/components/HeroSection";
-import FeatureSection from "@/components/FeatureSection";
-import DashboardSection from "@/components/DashboardSection";
-import MobileAppScreen from "@/components/MobileAppScreen";
-import ChallengeRewardsScreen from "@/components/ChallengeRewardsScreen";
-import { RewardsHoverTicker } from "@/components/RewardsHoverTicker";
-import { AuthExample } from "@/components/auth/AuthExample";
-import { useEffect } from "react";
+// Update this page (the content is just a fallback if you fail to update the page)
 
 const Index = () => {
-  useEffect(() => {
-    // Update page title and meta description for SEO
-    document.title = "Wagerly - India's First Social Challenge Network | Gaming & Wagering Platform";
-    
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Join Wagerly, India\'s first social challenge network. Compete with friends, challenge creators, and win real rewards through gaming and social wagering.');
-    }
-  }, []);
-
   return (
-    <main className="min-h-screen">
-      {/* Auth Example Navbar */}
-      <AuthExample />
-      
-      {/* Hero Section */}
-      <HeroSection />
-      
-      {/* Mobile App Demo */}
-      <MobileAppScreen />
-      
-      {/* Challenge & Rewards Demo */}
-      <ChallengeRewardsScreen />
-      
-      {/* Dashboard Demo Section */}
-      <DashboardSection />
-      
-      {/* Rewards Hover Ticker */}
-      <RewardsHoverTicker onSelect={(item) => console.log("Selected:", item)} />
-      
-      {/* Features Section */}
-      <FeatureSection />
-    </main>
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
+        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+      </div>
+    </div>
   );
 };
 
