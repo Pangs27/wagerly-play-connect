@@ -3,6 +3,7 @@ import FeatureSection from "@/components/FeatureSection";
 import DashboardSection from "@/components/DashboardSection";
 import MobileAppScreen from "@/components/MobileAppScreen";
 import ChallengeRewardsScreen from "@/components/ChallengeRewardsScreen";
+import { RewardsHoverTicker } from "@/components/RewardsHoverTicker";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -29,6 +30,9 @@ const Index = () => {
       
       {/* Dashboard Demo Section */}
       <DashboardSection />
+      
+      {/* Rewards Hover Ticker */}
+      <RewardsHoverTicker onSelect={(item) => console.log("Selected:", item)} />
       
       {/* Features Section */}
       <FeatureSection />
