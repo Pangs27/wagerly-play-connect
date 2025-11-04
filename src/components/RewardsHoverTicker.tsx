@@ -20,23 +20,29 @@ interface RewardsHoverTickerProps {
 }
 
 const defaultItems = [
-  "Coins",
-  "Skins",
-  "Boosts",
-  "Badges",
-  "Power-Ups",
-  "Mystery Box",
-  "VIP Pass",
+  "Amazon",
+  "Flipkart",
+  "Swiggy",
+  "Netflix",
+  "Steam",
+  "PlayStation",
+  "Zomato",
+  "BookMyShow",
+  "Myntra",
+  "Uber",
 ];
 
 const mockCosts: Record<string, number> = {
-  Coins: 0,
-  Skins: 500,
-  Boosts: 250,
-  Badges: 100,
-  "Power-Ups": 300,
-  "Mystery Box": 1000,
-  "VIP Pass": 2500,
+  Amazon: 500,
+  Flipkart: 500,
+  Swiggy: 300,
+  Netflix: 800,
+  Steam: 600,
+  PlayStation: 1000,
+  Zomato: 300,
+  BookMyShow: 400,
+  Myntra: 500,
+  Uber: 250,
 };
 
 const RewardItem = ({
