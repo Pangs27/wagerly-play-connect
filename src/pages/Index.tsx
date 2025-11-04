@@ -4,6 +4,7 @@ import DashboardSection from "@/components/DashboardSection";
 import MobileAppScreen from "@/components/MobileAppScreen";
 import ChallengeRewardsScreen from "@/components/ChallengeRewardsScreen";
 import { RewardsHoverTicker } from "@/components/RewardsHoverTicker";
+import { AuthExample } from "@/components/auth/AuthExample";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -19,6 +20,9 @@ const Index = () => {
 
   return (
     <main className="min-h-screen">
+      {/* Auth Example Navbar */}
+      <AuthExample />
+      
       {/* Hero Section */}
       <HeroSection />
       
